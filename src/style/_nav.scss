@@ -1,0 +1,30 @@
+nav{
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Finger Paint', cursive;
+  .logo{
+    padding: 2rem;
+    font-size:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   &-img{
+     width: 2rem;
+     margin-left: .8rem;
+    
+   }
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+    
+    li{
+      font-size: 1.4rem;
+      margin-right: 2rem;
+    }
+  }
+}
