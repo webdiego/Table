@@ -3,7 +3,6 @@ import GamberoRosso from '../img/gambero-rosso2.png'
 import Michelin from '../img/MichelinStar.svg.png'
 import SlowFood from '../img/slow-food.svg'
 import {Link} from 'react-router-dom'
-import {useState} from 'react'
 const Header = () => {
 
   return ( 

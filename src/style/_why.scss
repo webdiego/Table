@@ -17,7 +17,7 @@
     
  }
   &-description{
-  width: 40%;
+  width: 50rem;
   padding: 4rem;
   line-height: 3rem;
   margin-right: 10rem;
@@ -33,6 +33,7 @@
 }
 
 .why-balls{
+  
   flex: 1;
   &-1{
     z-index: -2;
@@ -41,6 +42,7 @@
     width: 40rem;
     background-color: rgb(255, 196, 0);
     border-radius: 50%;
+    transform: translateY(-5rem);
   }
   &-2{
     z-index: -1;
