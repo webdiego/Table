@@ -27,6 +27,21 @@ const Calculator = ( ) => {
 
         <form className="calculator-form" >
           <div className="calculator-number">
+          <div className="calculator-number_recipe">
+            <label>Original recipe is for</label>
+            <select value={numberRecipe} onChange={(e) => setNumberRecipe(+e.target.value)}>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
 
           <div className="calculator-number_people">
             <label>Number of people on table</label>
@@ -46,21 +61,7 @@ const Calculator = ( ) => {
             </select>
           </div>  
 
-             <div className="calculator-number_recipe">
-            <label>Original recipe is for</label>
-            <select value={numberRecipe} onChange={(e) => setNumberRecipe(+e.target.value)}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
+            
          
           </div>
          
