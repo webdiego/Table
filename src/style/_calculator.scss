@@ -1,104 +1,205 @@
-.calculator{
+.calculator {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   text-align: center;
-  &-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 2rem;
-    // border: 1px solid black;
-    padding: 2rem;
-    border-radius: 30px;
-  }
-  &-title{
-    font-family: 'Finger Paint', cursive;
+  
+
+  &-title {
+    font-family: "Finger Paint", cursive;
     font-size: 4rem;
     margin-top: 4rem;
     @media (max-width: 960px) {
       font-size: 3rem;
     }
+
   }
-  &-number{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem 0 2rem 0;
-    &_people{
-
-      select{
-        font-family: 'Comfortaa', cursive;
-        font-weight: bold;
-        background-color: rgb(255, 196, 0);
-        border-radius: 50%;
-        padding:1rem;
-        color:white;
-        margin: 0 1rem;
-      }
-      
-    }
-    &_recipe{
-
-      select{
-        margin: 0 1rem;
-        font-weight: bold;
-        font-family: 'Comfortaa', cursive;
-        background-color: rgb(255, 116, 51);
-        border-radius: 50%;
-        padding:1rem;
-        color:white;
-      }
-      
-    }
+  &_sub-title{
+    padding: 3rem;
   }
-
-
-  &-ingredients_inputs{
+  
+  &-container {
     display: flex;
-    align-items:flex-end;
+    align-items: center;
     justify-content: center;
-    label{
-      margin-right: 1rem;
+    flex-wrap: wrap;
+    @media (max-width: 960px) {
+    flex-direction: column-reverse;
     }
-   input{
-      border: none;
-      border-bottom: 2px solid #8760A6;
-      padding-top: 1rem;
-      margin-right: .8rem;
-      text-align: center;
-      font-size: 1.2rem;
-      width: 5rem;
-      color: #5a2487;
+    img {
+      @media (max-width: 1460px) {
+        margin-top: 3rem;
+        height: 25rem;
+      }
+      @media (max-width: 960px) {
+        margin-top: 3rem;
+        height: 20rem;
+      }
+      @media (max-width:485px) {
+        height: 16rem;
+       }
+    }
+  }
+  &-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    // padding: 2rem;
+    color: white;
+    p {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      @media (max-width: 1224px) {
+        font-size: 1.2rem;
+       }
+      
+    }
+    &_1 {
+      background-color: #F1B834;
+      border-radius: 2rem;
+      width: 35rem;
+      padding: 1.5rem;
+      @media (max-width: 600px) {
+       width: 30rem;
+      }
+      @media (max-width:485px) {
+        width: 22rem;
+        padding: 1rem;
+
+       }
+      
+      p {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        @media (max-width: 600px) {
+          font-size: 1.2rem;
+         }
+        
+      }
+      select {
+        font-family: "Comfortaa", cursive;
+        font-weight: bold;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10%;
+        padding: 0.4rem 1rem;
+        margin: 0 1rem;
+        text-align: center;
+      }
+    }
+    &_2 {
+      background-color: #6AB0C3;
+      border-radius: 2rem;
+      width: 35rem;
+      margin-top: 1rem;
+      padding: 1.5rem;
+      &-inputs{
+        display: flex;
+        align-items: center;
+       
+        @media (max-width:485px) {
+        display: flex;
+        flex-direction: column;
+      }
+      &-quantity{
+        margin-top: .5rem;
+      }
+      }
+      @media (max-width: 600px) {
+        width: 30rem;
+       }
+       @media (max-width:485px) {
+        width: 22rem;
+        padding: 1rem;
+
+       }
+       p {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        @media (max-width: 600px) {
+          font-size: 1.2rem;
+         }
+        
+      }
      
-    }
-    input[type=number]{
-      -webkit-appearance: none;
-      -moz-appearance: textfield
-    }
-    input:focus{
-      outline: none;
+      label {
+        margin-right: 1rem;
+        @media (max-width: 600px) {
+          
+          margin-right: 0.5rem;
+         }
+        //  @media (max-width:485px) {
+        //  font-size: .7rem;
+        //  }
+      }
+      input {
+        border: none;
+        padding-top: .6rem;
+        margin-right: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        width: 7rem;
+        @media (max-width: 600px) {
+          width: 5rem;
+          margin-right: 0.5rem;
+         }
+      }
+      input[type="number"] {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      select {
+        font-family: "Comfortaa", cursive;
+        font-weight: bold;
+        background-color: #ffffff;
+        transform: translateY(-.4rem);
+        border-radius: 10%;
+        padding: 0.4rem 1rem;
+        
+      }
     }
 
-    &__weight{
-      font-family: 'Comfortaa', cursive;
+    &_3 {
+      margin-top: 1rem;
+      background-color: #D86766;
+      border-radius: 2rem;
+      width: 35rem;
+      padding: 1.5rem;
+      @media (max-width: 600px) {
+        width: 30rem;
+       }
+       @media (max-width:485px) {
+        width: 22rem;
+        padding: 1rem;
+
+       }
+      select {
+        font-family: "Comfortaa", cursive;
         font-weight: bold;
-      background-color: #8760A6;
-        border-radius: 50%;
-        padding:1rem;
-        color:white;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10%;
+        padding: 0.4rem 1rem;
+        margin: 0 1rem;
+        text-align: center;
+      }
     }
   }
-  p{
-    text-align: center;
-    margin: 1rem 0;
-  }
-  &-buttons{
+
+ 
+  &-buttons {
     margin-top: 2rem;
     text-align: center;
-    button{
-      background-color:  #8760A6;
-      font-family: 'Comfortaa', cursive;
+    button {
+      font-size: 1.2rem;
+      background-color: #8760a6;
+      font-family: "Comfortaa", cursive;
       border-radius: 5px;
       border: none;
       color: white;
@@ -108,14 +209,37 @@
   }
 }
 
-.new-ingredient{
+.new-ingredient {
   text-align: center;
-  margin-top: 2rem;
-  h1{
-    margin: 1rem 0;
+  margin: 2rem 0;
+  background-color: rgb(36, 103, 198);
+  border-radius: 2rem;
+  width: 35rem;
+  color: white;
+  @media (max-width: 600px) {
+    width: 30rem;
+   }
+   @media (max-width:485px) {
+    width: 22rem;
+    
+
+   }
+   h2{
+    padding-top: 1rem;
+     @media (max-width:485px) {
+      font-size: 1.2rem;
+   
+     }
+   }
+   padding: 1.5rem 0rem;
+   &-result{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+    
+    p {
+      font-weight: bold;
+      margin-right: 1rem;
+    }
   }
-  p{
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-}

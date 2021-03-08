@@ -1,6 +1,7 @@
 import { useState } from "react";
 import '../style/_calculator.scss'
 import Ingredient from '../Components/Ingredients/Ingredient'
+import This from '../img/this-1.svg'
 
 const Calculator = ( ) => {
   const [numberPeople, setNumberPeople] = useState(1);
@@ -23,12 +24,15 @@ const Calculator = ( ) => {
     <div>
       <div className="calculator">
         <h1 className="calculator-title">Calculator</h1>
-
+       <p className="calculator_sub-title">In a few steps you will convert the amount of ingredient of the recipe with the amount you need .</p>
+        <div className="calculator-container">
 
         <form className="calculator-form" >
-          <div className="calculator-number">
-          <div className="calculator-number_recipe">
-            <label>Original recipe is for</label>
+         
+         <div className="calculator-form_1">
+
+            <p className="calculator-form_1-step">1. Insert the serving of the original recipe</p>
+            <label>The original recipe is for</label>
             <select value={numberRecipe} onChange={(e) => setNumberRecipe(+e.target.value)}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -41,9 +45,51 @@ const Calculator = ( ) => {
               <option value="9">9</option>
               <option value="10">10</option>
             </select>
-          </div>
+            <span>serving</span>
+         </div>
+        <div className="calculator-form_2">
 
-          <div className="calculator-number_people">
+          <p>2. Insert the ingredient that you want to convert</p>
+          <div className="calculator-form_2-inputs">
+         <div className="calculator-form_2-inputs-name">
+
+        <label>Name</label>
+        <input
+       
+          type="text"
+          value={ingredientName}
+          onChange={(e) => setIngredientName(e.target.value)}
+          required
+        />
+         </div>
+        <div className="calculator-form_2-inputs-quantity">
+
+        <label>Quantity</label>
+        <input
+          value={ingredientQuantity}
+          type="number"
+          onChange={(e) => setIngredientQuantity(+e.target.value)}
+          min="0"
+          step=".01"
+          max="1000"
+        />
+        <select 
+           value={mass}
+            onChange={(e) => setMass(e.target.value)}
+        >
+          <option value="g">g</option>
+          <option value="Kg">Kg</option>
+        </select>
+        </div>
+          </div>
+        </div>
+      
+            
+         
+
+          <div className="calculator-form_3">
+            
+          <p>3. Insert serving number on your table</p>
             <label>Number of people on table</label>
             <select 
             value={numberPeople} 
@@ -59,46 +105,8 @@ const Calculator = ( ) => {
               <option value="9">9</option>
               <option value="10">10</option>
             </select>
-          </div>  
-
-            
-         
           </div>
          
-         
-          <div className="calculator-ingredients">
-
-          <div className="calculator-ingredients_inputs" >
-        <label>Ingredient </label>
-        <input
-       
-          type="text"
-          value={ingredientName}
-          onChange={(e) => setIngredientName(e.target.value)}
-          required
-        />
-
-        <label>Quantity</label>
-        <input
-          value={ingredientQuantity}
-          type="number"
-          onChange={(e) => setIngredientQuantity(+e.target.value)}
-          min="0"
-          step=".01"
-          max="1000"
-        />
-        <select 
-        className="calculator-ingredients_inputs__weight"
-           value={mass}
-            onChange={(e) => setMass(e.target.value)}
-        >
-          <option value="g">g</option>
-          <option value="Kg">Kg</option>
-        </select>
-      </div>
-        <p>Remember that 1g = 1ml and 1kg = 1L</p>
-            
-          </div>
            <div className="calculator-buttons">
 
           <button onClick={showResult}>Result</button>
@@ -120,6 +128,8 @@ const Calculator = ( ) => {
         
          
         </form>
+        <img src={This} alt=""/>
+        </div>
       </div>
     </div>
   );

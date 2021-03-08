@@ -1,4 +1,5 @@
 import '../style/_why.scss'
+import Boom from '../img/boom.png'
 
 const Why = () => {
   return (
@@ -7,7 +8,9 @@ const Why = () => {
         <h1>Why Table?</h1>
       </div>
       <div className="why-container">
-
+      <div className="why-img">
+        <img src={Boom} alt=""/>
+      </div>
       <div className="why-description">
         <p>
           <span className="why-logo">Table</span> was born with the intention of facilitating life between pans,
@@ -22,14 +25,11 @@ const Why = () => {
           
           <p>
            This application can help you calculate and
-          "churn out" the recipe ad hoc for you and not miss a shot in the
-          kitchen.
+          "churn out" the ingredient ad hoc for you and not miss a shot in the
+          kitchen and above all don't waste food.
           </p>
       </div>
-      <div className="why-balls">
-        <div className="why-balls-1"></div>
-        <div className="why-balls-2"></div>
-      </div>
+      
       </div>
     </div>
   );

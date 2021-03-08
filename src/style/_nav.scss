@@ -5,6 +5,10 @@ nav{
   justify-content: space-between;
   align-items: center;
   font-family: 'Finger Paint', cursive;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
   
   .logo{
     padding: 2rem;
