@@ -12,6 +12,21 @@ a{
   text-decoration: none;  
   color: black;
 }
+select{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
 
+option{
+  font-family: 'Comfortaa', cursive;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-weight: lighter;
+}
 @import './nav';
 @import './header';
+@import './calculator';
