@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  
 
   &-title {
     font-family: "Finger Paint", cursive;
@@ -11,19 +10,18 @@
     @media (max-width: 960px) {
       font-size: 3rem;
     }
-
   }
-  &_sub-title{
+  &_sub-title {
     padding: 3rem;
   }
-  
+
   &-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     @media (max-width: 960px) {
-    flex-direction: column-reverse;
+      flex-direction: column-reverse;
     }
     img {
       @media (max-width: 1460px) {
@@ -34,9 +32,9 @@
         margin-top: 3rem;
         height: 20rem;
       }
-      @media (max-width:485px) {
+      @media (max-width: 485px) {
         height: 16rem;
-       }
+      }
     }
   }
   &-form {
@@ -53,31 +51,28 @@
       margin: 2rem 0;
       @media (max-width: 1224px) {
         font-size: 1.2rem;
-       }
-      
+      }
     }
     &_1 {
-      background-color: #F1B834;
+      background-color: #f1b834;
       border-radius: 2rem;
       width: 35rem;
       padding: 1.5rem;
       @media (max-width: 600px) {
-       width: 30rem;
+        width: 30rem;
       }
-      @media (max-width:485px) {
+      @media (max-width: 485px) {
         width: 22rem;
         padding: 1rem;
+      }
 
-       }
-      
       p {
         font-weight: bold;
         font-size: 1.5rem;
         margin: 2rem 0;
         @media (max-width: 600px) {
           font-size: 1.2rem;
-         }
-        
+        }
       }
       select {
         font-family: "Comfortaa", cursive;
@@ -90,62 +85,58 @@
       }
     }
     &_2 {
-      background-color: #6AB0C3;
+      background-color: #6ab0c3;
       border-radius: 2rem;
       width: 35rem;
       margin-top: 1rem;
       padding: 1.5rem;
-      &-inputs{
+      &-inputs {
         display: flex;
         align-items: center;
-       
-        @media (max-width:485px) {
-        display: flex;
-        flex-direction: column;
-      }
-      &-quantity{
-        margin-top: .5rem;
-      }
+        justify-content: center;
+
+        @media (max-width: 485px) {
+          display: flex;
+          flex-direction: column;
+        }
+        &-quantity {
+          margin-top: 0.5rem;
+        }
       }
       @media (max-width: 600px) {
         width: 30rem;
-       }
-       @media (max-width:485px) {
+      }
+      @media (max-width: 485px) {
         width: 22rem;
         padding: 1rem;
-
-       }
-       p {
+      }
+      p {
         font-weight: bold;
         font-size: 1.5rem;
         margin: 2rem 0;
         @media (max-width: 600px) {
           font-size: 1.2rem;
-         }
-        
+        }
       }
-     
+
       label {
-        margin-right: 1rem;
+        margin-right: 0.6rem;
         @media (max-width: 600px) {
-          
           margin-right: 0.5rem;
-         }
-        //  @media (max-width:485px) {
-        //  font-size: .7rem;
-        //  }
+        }
       }
       input {
         border: none;
-        padding-top: .6rem;
+        padding-top: 0.6rem;
         margin-right: 0.5rem;
         text-align: center;
         font-size: 1rem;
         width: 7rem;
+        border-radius: 5px;
         @media (max-width: 600px) {
-          width: 5rem;
+          width: 7rem;
           margin-right: 0.5rem;
-         }
+        }
       }
       input[type="number"] {
         -webkit-appearance: none;
@@ -159,27 +150,25 @@
         font-family: "Comfortaa", cursive;
         font-weight: bold;
         background-color: #ffffff;
-        transform: translateY(-.4rem);
+        transform: translateY(-0.4rem);
         border-radius: 10%;
         padding: 0.4rem 1rem;
-        
       }
     }
 
     &_3 {
       margin-top: 1rem;
-      background-color: #D86766;
+      background-color: #d86766;
       border-radius: 2rem;
       width: 35rem;
       padding: 1.5rem;
       @media (max-width: 600px) {
         width: 30rem;
-       }
-       @media (max-width:485px) {
+      }
+      @media (max-width: 485px) {
         width: 22rem;
         padding: 1rem;
-
-       }
+      }
       select {
         font-family: "Comfortaa", cursive;
         font-weight: bold;
@@ -192,9 +181,8 @@
     }
   }
 
- 
   &-buttons {
-    margin-top: 2rem;
+    margin: 2rem 0;
     text-align: center;
     button {
       font-size: 1.2rem;
@@ -218,28 +206,25 @@
   color: white;
   @media (max-width: 600px) {
     width: 30rem;
-   }
-   @media (max-width:485px) {
+  }
+  @media (max-width: 485px) {
     width: 22rem;
-    
-
-   }
-   h2{
+  }
+  h2 {
     padding-top: 1rem;
-     @media (max-width:485px) {
+    @media (max-width: 485px) {
       font-size: 1.2rem;
-   
-     }
-   }
-   padding: 1.5rem 0rem;
-   &-result{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-    }
-    
-    p {
-      font-weight: bold;
-      margin-right: 1rem;
     }
   }
+  padding: 1.5rem 0rem;
+  &-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+}

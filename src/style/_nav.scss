@@ -1,18 +1,18 @@
-nav{
+nav {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Finger Paint', cursive;
+  font-family: "Finger Paint", cursive;
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 100;
-  
-  .logo{
+
+  .logo {
     padding: 2rem;
-    font-size:2rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,31 +20,29 @@ nav{
       font-size: 1.4rem;
       padding: 1.2rem;
     }
-    
-   &-img{
-     width: 2rem;
-     margin-left: .8rem;
-     @media (max-width: 960px) {
-      margin-left: 0.3rem;
+
+    &-img {
+      width: 2rem;
+      margin-left: 0.8rem;
+      @media (max-width: 960px) {
+        margin-left: 0.3rem;
+      }
     }
-   }
   }
-  ul{
+  ul {
     display: flex;
     list-style: none;
     padding: 2rem;
-     @media (max-width: 960px) {
-       padding: 0rem;
-     }
-    
-    li{
+    @media (max-width: 960px) {
+      padding: 0rem;
+    }
+
+    li {
       font-size: 1.4rem;
       margin-right: 2rem;
       @media (max-width: 960px) {
         font-size: 1.1rem;
         margin-right: 1.2rem;
-
-       
       }
     }
   }

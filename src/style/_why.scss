@@ -1,56 +1,54 @@
-.why{
+.why {
   width: 100%;
   height: 100%;
 
-  &-title{
+  &-title {
     text-align: center;
-    font-family: 'Finger Paint', cursive;
+    font-family: "Finger Paint", cursive;
     font-size: 2rem;
     margin-top: 4rem;
     @media (max-width: 960px) {
       font-size: 1.5rem;
     }
-    
- }
-  &-container{
+  }
+  &-container {
     width: 100%;
-    display: flex;  
-    justify-content: center;  
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 3rem;
-    
- }
-  &-description{
-  width: 40rem;
-  padding: 3rem;
-  line-height: 3rem;
-   margin-right: 6rem;
-   @media (max-width: 960px) {
-    margin-right: 0rem;
   }
+  &-description {
+    width: 40rem;
+    padding: 3rem;
+    line-height: 3rem;
+    margin-right: 6rem;
+    @media (max-width: 960px) {
+      margin-right: 0rem;
+    }
   }
 
- &-logo{
-  font-family: 'Finger Paint', cursive;
-  font-size: 2rem;
- }
- p{
-   margin-bottom: 2rem;
- }
+  &-logo {
+    font-family: "Finger Paint", cursive;
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
 }
 
-.why-img{
-  img{
-   width: 40rem;
-   @media (max-width: 660px) {
-   width: 35rem ;
-  }
-  @media (max-width: 543px) {
-    width: 27rem ;
-   }
-   @media (max-width: 380px) {
-    width: 20rem ;
-   }
+.why-img {
+  img {
+    width: 40rem;
+    @media (max-width: 660px) {
+      width: 35rem;
+    }
+    @media (max-width: 543px) {
+      width: 27rem;
+    }
+    @media (max-width: 380px) {
+      width: 20rem;
+    }
   }
 }
