@@ -13,6 +13,7 @@
   }
   &_sub-title {
     padding: 3rem;
+    line-height: 2rem;
   }
 
   &-container {
@@ -57,7 +58,7 @@
       background-color: #f1b834;
       border-radius: 2rem;
       width: 35rem;
-      padding: 1.5rem;
+      padding: 1rem 0 2rem 0;
       @media (max-width: 600px) {
         width: 30rem;
       }
@@ -69,7 +70,9 @@
       p {
         font-weight: bold;
         font-size: 1.5rem;
-        margin: 2rem 0;
+         margin: 1rem 1rem 2rem 1rem;
+         line-height: 2rem;
+
         @media (max-width: 600px) {
           font-size: 1.2rem;
         }
@@ -89,7 +92,7 @@
       border-radius: 2rem;
       width: 35rem;
       margin-top: 1rem;
-      padding: 1.5rem;
+      padding: 1rem 1rem 2rem 1rem;
       &-inputs {
         display: flex;
         align-items: center;
@@ -113,7 +116,9 @@
       p {
         font-weight: bold;
         font-size: 1.5rem;
-        margin: 2rem 0;
+        margin: 1rem 1rem 2rem 1rem;
+        line-height: 2rem;
+
         @media (max-width: 600px) {
           font-size: 1.2rem;
         }
@@ -161,13 +166,18 @@
       background-color: #d86766;
       border-radius: 2rem;
       width: 35rem;
-      padding: 1.5rem;
+      padding: 1rem 1rem 2rem 1rem;
       @media (max-width: 600px) {
         width: 30rem;
       }
       @media (max-width: 485px) {
         width: 22rem;
         padding: 1rem;
+      }
+      p{
+        margin: 1rem 1rem 2rem 1rem;
+        line-height: 2rem;
+
       }
       select {
         font-family: "Comfortaa", cursive;

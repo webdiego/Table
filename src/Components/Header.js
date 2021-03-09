@@ -1,4 +1,4 @@
-import HeaderImg from '../img/vector-creator.png'
+import HeaderImg from '../img/vector-creator-small.png'
 import GamberoRosso from '../img/gambero-rosso2.png'
 import Michelin from '../img/MichelinStar.svg.png'
 import SlowFood from '../img/slow-food.svg'
@@ -22,7 +22,7 @@ const Header = () => {
       </div>
 
       <div className="header-trusted">
-      <h2>Trusted by chef around the world</h2>
+      <h2>Trusted by chefs around the world and by</h2>
 
       <div className="header-trusted-logos">
        <img className="gambero-rosso" src={GamberoRosso} alt=""/>
@@ -30,7 +30,6 @@ const Header = () => {
        <img  className="michelin" src={Michelin} alt=""/>
 
       </div>
-
       </div>
     </header>
    );

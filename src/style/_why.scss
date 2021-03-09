@@ -24,8 +24,10 @@
     padding: 3rem;
     line-height: 3rem;
     margin-right: 6rem;
+    
     @media (max-width: 960px) {
       margin-right: 0rem;
+      text-align: center;
     }
   }
 

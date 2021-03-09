@@ -1,5 +1,5 @@
 import '../style/_why.scss'
-import Boom from '../img/boom.png'
+import Boom from '../img/boom-small.png'
 
 const Why = () => {
   return (
@@ -18,11 +18,9 @@ const Why = () => {
         </p>
 
           <p>
-           How many times have you come across a
-          complicated recipe, long and above all for 6 people when there were
-          only 4 at the table?
+          How many times have you come across a complicated, long recipe and above all for 6 people when at the table we were only in  4 ?
           </p>
-          
+          <p>I know, we are more good to cook or...eating than do maths.</p>
           <p>
            This application can help you calculate and
           "churn out" the ingredient ad hoc for you and not miss a shot in the

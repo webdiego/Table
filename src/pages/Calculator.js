@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../style/_calculator.scss'
 import Ingredient from '../Components/Ingredients/Ingredient'
-import This from '../img/this-1.svg'
+import This from '../img/this-small.png'
 
 const Calculator = ( ) => {
   const [numberPeople, setNumberPeople] = useState(1);
@@ -24,7 +24,7 @@ const Calculator = ( ) => {
     <div>
       <div className="calculator">
         <h1 className="calculator-title">Calculator</h1>
-       <p className="calculator_sub-title">In a few steps you will convert the amount of ingredient of the recipe with the amount you need .</p>
+       <p className="calculator_sub-title">In a few steps you will convert the ingredients amount of the original recipe with the amount you need.</p>
         <div className="calculator-container">
 
         <form className="calculator-form" >
@@ -85,8 +85,6 @@ const Calculator = ( ) => {
         </div>
       
             
-         
-
           <div className="calculator-form_3">
             
           <p>3. Insert serving number on your table</p>
