@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className="header-description">
       <h1>It's time to cook!</h1>
-      <h4>How many we are?</h4>
+      <h4>How many of us?</h4>
       <Link to="/why"> <button className="header-button">Learn More </button> </Link>
       </div>
       
