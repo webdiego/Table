@@ -20,7 +20,7 @@ const Ingredient = ({ numberPeople,numberRecipe ,recipeName, recipeQuantity,mass
   {(show &&  (
       <div className="new-ingredient" >
     
-      <h2>You ingredient converted is :</h2>
+      <h2>Your ingredient converted is :</h2>
       <div className="new-ingredient-result">
       <p>{recipeName}</p>
       <p>{(recipeQuantity > 1000 ? recipeQuantity / 1000 : recipeQuantity).toFixed(2)}  <span>{mass}</span></p>
