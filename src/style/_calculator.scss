@@ -44,7 +44,6 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 3rem;
-    // padding: 2rem;
     color: white;
     p {
       font-weight: bold;
@@ -64,7 +63,7 @@
       }
       @media (max-width: 485px) {
         width: 22rem;
-        padding: 1rem;
+        padding: 1rem 1rem 4rem 1rem
       }
 
       p {
@@ -80,12 +79,13 @@
       select {
         font-family: "Comfortaa", cursive;
         font-weight: bold;
-        background-color: rgb(255, 255, 255);
         border-radius: 10%;
         padding: 0.4rem 1rem;
         margin: 0 1rem;
         text-align: center;
+        color:#f1b834;
       }
+     
     }
     &_2 {
       background-color: #6ab0c3;
@@ -103,7 +103,11 @@
           flex-direction: column;
         }
         &-quantity {
+          
           margin-top: 0.5rem;
+          input{
+          width: 3rem !important;
+        }
         }
       }
       @media (max-width: 600px) {
@@ -111,7 +115,7 @@
       }
       @media (max-width: 485px) {
         width: 22rem;
-        padding: 1rem;
+        padding: 1rem 1rem 4rem 1rem
       }
       p {
         font-weight: bold;
@@ -137,6 +141,8 @@
         text-align: center;
         font-size: 1rem;
         width: 7rem;
+        color:  #2a7d94;
+        font-weight: bold; 
         border-radius: 5px;
         @media (max-width: 600px) {
           width: 7rem;
@@ -146,6 +152,8 @@
       input[type="number"] {
         -webkit-appearance: none;
         -moz-appearance: textfield;
+        color:  #2a7d94;
+        font-weight: bold;  
       }
       input:focus {
         outline: none;
@@ -154,10 +162,10 @@
       select {
         font-family: "Comfortaa", cursive;
         font-weight: bold;
-        background-color: #ffffff;
         transform: translateY(-0.4rem);
         border-radius: 10%;
         padding: 0.4rem 1rem;
+        color:  #2a7d94;
       }
     }
 
@@ -172,7 +180,7 @@
       }
       @media (max-width: 485px) {
         width: 22rem;
-        padding: 1rem;
+        padding: 1rem 1rem 4rem 1rem
       }
       p{
         margin: 1rem 1rem 2rem 1rem;
@@ -182,11 +190,11 @@
       select {
         font-family: "Comfortaa", cursive;
         font-weight: bold;
-        background-color: rgb(255, 255, 255);
         border-radius: 10%;
         padding: 0.4rem 1rem;
         margin: 0 1rem;
         text-align: center;
+        color: #d86766;
       }
     }
   }
