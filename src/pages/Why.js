@@ -18,7 +18,7 @@ const Why = () => {
         </p>
 
           <p>
-          How many times have you come across a complicated, long recipe and above all for 6 people when at the table we were only in 4 ?
+          How many times have you come across a complicated, long recipe and above all for 6 people when at the table we were only 4 ?
           </p>
           <p>I know, we are better cooking or...eating than do maths.</p>
           <p>
